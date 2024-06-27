@@ -1,0 +1,13 @@
+{
+  "properties_page": "Hotels Seite",
+  "property_tags": "Hoteltags",
+  "property_code": "Hotelcode",
+  "company_details": "Firmendetails",
+  "timezone": "Zeitzone",
+  "currency_code": "Währungscode",
+  "default_in": "Standard Check-in Zeit",
+  "default_out": "Standard Check-out Zeit",
+  "placeholder_select_time": "Zeit auswählen",
+  "unavailable_booking_online": "Onlinebuchung nicht verfügbar",
+  "date_range": "Datumsspanne"
+}

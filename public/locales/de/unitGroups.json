@@ -1,0 +1,11 @@
+{
+  "unit_group": "Zimmerkategorie",
+  "unit_groups": "Zimmerkategorien",
+  "edit_unit_group": "Zimmerkategorie bearbeiten",
+  "create_unit_group": "Zimmerkategorie erstellen",
+  "units_of": "Zimmer dieser Zimmerkategorie",
+  "maximum_discount": "Maximaler Discount",
+  "minimum_price": "Minimaler Preis",
+  "max_persons": "Maximale Personenzahl",
+  "inventory_attributes": "Inventar Eigenschaften"
+}

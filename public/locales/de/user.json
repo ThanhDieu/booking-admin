@@ -1,0 +1,16 @@
+{
+  "title": "Benutzer Management",
+  "user": "Benutzer",
+  "user_page": "Benutzer Seite",
+  "deactivated": "Deaktiviert",
+  "new_password": "Neues Passwort",
+  "valid_pass": "Passwort hat eine Mindestlänge von 6 Zeichen",
+  "reset_pass": "Passwort zurücksetzen",
+  "undo_password": "Passwort zurücknehmen",
+  "edit_user": "Benutzer bearbeiten",
+  "is_admin": "Ist Accountadmin",
+  "add_field": "Feld hinzufügen",
+  "message_alert": "Accountadmin hat Zugriff auf alle Properties",
+  "create_user": "Benutzer erstellen",
+  "update_user": "Benutzer aktualisieren"
+}

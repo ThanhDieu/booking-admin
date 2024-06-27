@@ -1,0 +1,7 @@
+{
+  "card_holder_name": "Card holder name",
+  "card_number": "Card number",
+  "expiry_month": "Expiry month",
+  "expiry_year": "Expiry year",
+  "payer_email": "Payer email"
+}

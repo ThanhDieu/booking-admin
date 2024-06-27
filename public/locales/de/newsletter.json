@@ -1,0 +1,14 @@
+{
+  "create_newsletter": "Newsletter erstellen",
+  "newsletter_page": "Newsletter-Seite",
+  "intro_content": "Intro-Inhalt",
+  "outro_content": "Outro-Inhalt",
+  "new_newsletter": "Neuer newsletter",
+  "property_filter_placeholder": "Bundle nach Eigenschaft filtern",
+  "create_and_send_mail": "E-Mails erstellen und versenden",
+  "validate_select_bundle": "Bitte wählen Sie Bündel",
+  "validate_form": "Bitte füllen Sie alle geforderten Felder aus",
+  "click_here": "Klicken Sie hier für weitere Details",
+  "newsletter_name": "Newslettername",
+  "save_and_send_mail": "E-Mails speichern und versenden"
+}

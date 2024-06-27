@@ -1,0 +1,16 @@
+{
+  "policy": "Richtlinie",
+  "policies": "Richtlinien",
+  "cancellation": "Stornierung",
+  "no_show": "No-show",
+  "cancellation_period": "Stornierungszeitraum",
+  "months": "Monate",
+  "days": "Tage",
+  "hours": "Stunden",
+  "reference": "Referenzpunkt",
+  "percent": "Prozent",
+  "percent_fee": "Prozent Gebühr",
+  "include_services": "Inklusive Services",
+  "limit_to": "Limitieren auf",
+  "vat": "VAT"
+}

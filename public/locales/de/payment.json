@@ -1,0 +1,7 @@
+{
+  "card_holder_name": "Karteneigentümer Name",
+  "card_number": "Kartennummer",
+  "expiry_month": "Ablaufdatum",
+  "expiry_year": "Ablaufjahr",
+  "payer_email": "E-Mail Karteneigentümer"
+}

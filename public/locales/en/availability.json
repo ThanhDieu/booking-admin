@@ -1,0 +1,17 @@
+{
+  "availability": "Availability",
+  "units": "Units",
+  "house_count": "House count",
+  "out_of_order": "Out of order",
+  "sold": "Sold",
+  "blocks": "Blocks",
+  "definitely_blocked": "Definitely blocked",
+  "picked": "Picked",
+  "remaining": "Remaining",
+  "tentatively_blocked": "Tentatively blocked",
+  "occupancy": "Occupancy",
+  "available": "Available",
+  "available_to_sell": "Available to sell",
+  "allowed_overbooking": "Allowed overbooking",
+  "possible_overbooking": "Possible overbooking"
+}

@@ -1,0 +1,47 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "properties": "Hotels",
+    "reservations": "Reservierungen",
+    "holiday_Package": "Urlaubsangebote",
+    "vouchers": "Gutscheine",
+    "tags": "Banner",
+    "activities": "Aktivitäten",
+    "landscapes": "Landschaften",
+    "media": "Medien",
+    "setting": "Einstellungen",
+    "users": "Benutzer",
+    "build_ibe": "IBE bauen",
+    "bundle": "Bündel",
+    "bundles": "Bündel",
+    "overview": "Überblick",
+    "templates": "Vorlagen",
+    "template": "Vorlage",
+    "tasks": "Aufgaben",
+    "inventory": "Inventar",
+    "unit-groups": "Zimmerkategorien",
+    "units": "Zimmer",
+    "services": "Services",
+    "detail": "Detail",
+    "function": "Funktion",
+    "newsletter": "Newsletter",
+    "room-category": "Zimmerkategorie",
+    "advertising": "Werbung",
+    "offer": "Angebot",
+    "offers": "Angebote",
+    "create": "Erstellen",
+    "build-process": "Build-Prozess",
+    "archive": "Archiv"
+  },
+  "roles_box": {
+    "manager": "Kontext",
+    "properties": "Hotels"
+  },
+  "user_box": {
+    "time_mode_browser": "Browser Zeit",
+    "time_mode_properties": "Property Zeit",
+    "change_language": "Sprache ändern",
+    "logout": "Abmelden",
+    "logIn": "Anmeldung"
+  }
+}

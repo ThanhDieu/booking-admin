@@ -1,0 +1,5 @@
+import ${name}Props from "./${name}.d";
+
+export default function ${name}(props: ${name}Props) {
+  return <></>;
+}

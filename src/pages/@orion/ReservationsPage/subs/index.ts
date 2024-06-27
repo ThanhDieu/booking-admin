@@ -1,0 +1,9 @@
+export { default as ExtrasPage } from './ExtrasPage';
+export { default as FolioPage } from './FolioPage';
+export { default as GeneralPage } from './GeneralPage';
+export { default as GuestPage } from './GuestPage';
+export { default as InvoicesPage } from './InvoicesPage';
+export { default as TravelDatePage } from './TravelDatePage';
+export { default as CreateAccommodation } from './CreateAccommodation';
+export { default as CreateBookerDetail } from './CreateBookerDetail';
+export { default as CreatePayment } from './CreatePayment';

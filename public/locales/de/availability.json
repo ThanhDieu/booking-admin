@@ -1,0 +1,17 @@
+{
+  "availability": "Verfügbarkeit",
+  "units": "Zimmer",
+  "house_count": "Hausnummer",
+  "out_of_order": "Nicht funktionsfähig",
+  "sold": "Verkauft",
+  "blocks": "Blocks",
+  "definitely_blocked": "Definitiv blockiert",
+  "picked": "Gewählt",
+  "remaining": "Verbleibend",
+  "tentatively_blocked": "Vorläufig blockiert",
+  "occupancy": "Belegung",
+  "available": "Verfügbar",
+  "available_to_sell": "Verfügbar zum Verkauf",
+  "allowed_overbooking": "Erlaubtes Überbuchen",
+  "possible_overbooking": "Mögliches Überbuchen"
+}

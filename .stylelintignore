@@ -1,0 +1,5 @@
+/src/**/*.tsx
+/src/**/index.stories.tsx
+README.md
+
+src/pages/Real3DFlipbook

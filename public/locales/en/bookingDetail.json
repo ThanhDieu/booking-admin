@@ -1,0 +1,8 @@
+{
+  "booking_detail": "Booking detail",
+  "booker_detail": "Booker details",
+  "payment_account": "Payment account",
+  "alert_desc": "CVC and the payer email are optional. Adding this information reduces the risk of fraud. Verification process involves additional costs per transaction.",
+  "add_new_reservation": "Add new reservation",
+  "add_booking_comment": "Add booking comment"
+}

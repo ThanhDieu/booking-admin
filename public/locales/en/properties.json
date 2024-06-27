@@ -1,0 +1,13 @@
+{
+  "properties_page": "Properties page",
+  "property_tags": "Property tags",
+  "property_code": "Property code",
+  "company_details": "Company details",
+  "timezone": "Timezone",
+  "currency_code": "Currency code",
+  "default_in": "Default check-in time",
+  "default_out": "Default check-out time",
+  "placeholder_select_time": "Select time",
+  "unavailable_booking_online": "Unavailable Booking Online",
+  "date_range": "Date range"
+}

@@ -1,0 +1,17 @@
+{
+  "service": "Service",
+  "services": "Services",
+  "service_type": "Servicetyp",
+  "service_types": "Servicetypen",
+  "service_unit": "Serviceart",
+  "account_configuration": "Account Einstellungen",
+  "effective_period_from": "Verfügbare Periode",
+  "service_tags": "Service Banner",
+  "bundle_days": "Angebotstage",
+  "placeholder_bundle_days": "Auswahl der Bundletage",
+  "booking_period": "Buchungszeitraum",
+  "booking_period_desc": "Festlegen der Buchungszeiträume, um festzulegen, wann dieser Tarifplan zum Verkauf angeboten wird. Außerhalb der definierten Buchungszeiträume ist dieser Tarifplan für Buchende nicht sichtbar.",
+  "booking_channels": "Buchungskanäle",
+  "vat": "VAT",
+  "new_type": "New type"
+}

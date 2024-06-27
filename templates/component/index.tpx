@@ -1,0 +1,2 @@
+export { default } from './${name}';
+export type { default as ${name}Props } from './${name}.d';

@@ -1,0 +1,11 @@
+{
+  "dashboard_page": {
+    "title": "Dashboard",
+    "table_manage": {
+      "title": "Maintenance Schedule for Online Booking System"
+    },
+    "table_tasks": {
+      "title": "Task list"
+    }
+  }
+}

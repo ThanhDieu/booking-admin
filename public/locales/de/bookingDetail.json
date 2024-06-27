@@ -1,0 +1,8 @@
+{
+  "booking_detail": "Buchungsdetail",
+  "booker_detail": "Details Buchender",
+  "payment_account": "Zahlungskonto",
+  "alert_desc": "CVC und E-Mail des Zahlenden sind optional.",
+  "add_new_reservation": "Neue Reservierung",
+  "add_booking_comment": "Buchungskommentar hinzufügen"
+}

@@ -1,0 +1,13 @@
+{
+  "vouchers_page": "Gutschein Seite",
+  "vouchers": "Gutscheine",
+  "create_voucher": "Gutschein erstellen",
+  "your_voucher_code": "Ihr Gutscheincode",
+  "please_copy_voucher": "Bitte kopieren Sie diesen Gutscheincode, er ist später nicht mehr sichtbar.",
+  "copied": "Kopiert",
+  "printed": "Gedruckt",
+  "close_and_copy": "Schließen und kopieren",
+  "search_placeholder": "Suche nach vollständigem Code, E-Mail, Hotel",
+  "confirm_invalid": "Sind Sie sicher, dass Sie diesen Gutschein als ungültig festlegen möchten? Diese Aktion kann nicht rückgängig gemacht werden",
+  "all_hotels": "Alle Hotels"
+}

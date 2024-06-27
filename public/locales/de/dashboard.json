@@ -1,0 +1,11 @@
+{
+  "dashboard_page": {
+    "title": "Dashboard",
+    "table_manage": {
+      "title": "Wartungsplan für das Online-Buchungssystem"
+    },
+    "table_tasks": {
+      "title": "Aufgabenliste"
+    }
+  }
+}

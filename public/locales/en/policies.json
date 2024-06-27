@@ -1,0 +1,16 @@
+{
+  "policy": "Policy",
+  "policies": "Policies",
+  "cancellation": "Cancellation",
+  "no_show": "No-show",
+  "cancellation_period": "Cancellation period",
+  "months": "Months",
+  "days": "Days",
+  "hours": "Hours",
+  "reference": "Reference point",
+  "percent": "Percent",
+  "percent_fee": "Percent fee",
+  "include_services": "Including services",
+  "limit_to": "Limit to",
+  "vat": "VAT"
+}

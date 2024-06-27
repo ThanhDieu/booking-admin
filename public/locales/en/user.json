@@ -1,0 +1,16 @@
+{
+  "title": "User Management",
+  "user": "User",
+  "user_page": "User Page",
+  "deactivated": "Deactivated",
+  "new_password": "New password",
+  "valid_pass": "Password must have at least 6 character",
+  "reset_pass": "Reset password",
+  "undo_password": "Undo password",
+  "edit_user": "Edit user",
+  "is_admin": "Is account admin",
+  "add_field": "Add field",
+  "message_alert": "Account admin has access to all properties.",
+  "create_user": "Create user",
+  "update_user": "Update user"
+}

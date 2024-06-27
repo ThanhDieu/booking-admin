@@ -1,0 +1,109 @@
+#------------------------------------------------Pipeline------------------------------------------------
+kind: pipeline
+type: docker
+name: Orion.Admin
+
+clone:
+  disable: true
+
+steps:
+  - name: Clone
+    image: alpine/git
+    commands:
+    - git -c http.sslVerify=false clone -b $DRONE_COMMIT_BRANCH https://$${creds}@git.dision.office/Orion/orion.admin.git
+      
+  - name: Prebuild & Build Prod
+    image: node:18-alpine
+    commands:
+    - yarn --cwd orion.admin install
+    - yarn --cwd orion.admin build
+    when:
+      branch:
+      - prod
+
+  - name: Prebuild & Build Staging
+    image: node:18-alpine
+    commands:
+    - yarn --cwd orion.admin install
+    - yarn --cwd orion.admin build:stage
+    when:
+      branch:
+      - staging
+
+  - name: Transfer to staging
+    image: appleboy/drone-scp
+    settings:
+      host:
+        from_secret: orion-host-2
+      username:
+        from_secret: orion-host-2-user
+      password:
+        from_secret: orion-host-2-password
+      target: /tmp/admin/
+      source: /drone/src/orion.admin/build
+      strip_components: 3
+    when:
+      branch:
+      - staging
+
+  - name: Deploy to staging
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: orion-host-2
+      username:
+        from_secret: orion-host-2-user
+      password:
+        from_secret: orion-host-2-password
+      script:
+        - /tmp/admin.sync
+    when:
+      branch:
+      - staging
+
+  - name: Transfer to Netcup
+    image: drillster/drone-rsync
+    settings:
+      hosts:
+        from_secret: netcup-host
+      user:
+        from_secret: netcup-host-user
+      key:
+        from_secret: netcup-key
+      source: /drone/src/orion.admin/build
+      target: /data/shared/orion/frontend/admin/
+      recursive: true
+    when:
+        branch:
+        - prod
+
+node:
+  proxmox: docker-runner01
+
+---
+kind: pipeline
+type: docker
+name: Noti
+
+clone:
+  disable: true
+
+steps:
+  - name: Notification
+    image: parrazam/drone-ntfy
+    when:
+        status: [success, failure]
+    settings:
+      url: http://drone-ntfy
+      topic: drone-events
+      priority: high
+      tags: 
+        - pipeline-status
+        - dev
+      username:
+        from_secret: ntfy_user
+      password:
+        from_secret: ntfy_password
+
+depends_on:
+  - Orion.Admin

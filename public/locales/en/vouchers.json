@@ -1,0 +1,13 @@
+{
+  "vouchers_page": "Vouchers Page",
+  "vouchers": "Vouchers",
+  "create_voucher": "Create voucher",
+  "your_voucher_code": "Your voucher code",
+  "please_copy_voucher": "Please copy this voucher code - you won't able to see it later.",
+  "copied": "Copied",
+  "printed": "Printed",
+  "close_and_copy": "Close and copy",
+  "search_placeholder": "Search by full code, email, hotel",
+  "confirm_invalid": "Are you sure you want to set invalid for this voucher? This action CANNOT be UNDONE",
+  "all_hotels": "All Hotels"
+}

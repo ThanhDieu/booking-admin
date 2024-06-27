@@ -1,0 +1,10 @@
+{
+  "unit": "Zimmer",
+  "units": "Zimmer",
+  "edit_unit": "Zimmer bearbeiten",
+  "create_unit": "Zimmer erstellen",
+  "unit_group_and_occupancy": "Zimmerkategorien und Auslastung",
+  "assign_unit_to_unit_group": "Gerät einer Gerätegruppe zuordnen",
+  "max_persons": "Max. Personen",
+  "unit_tag": "Einheiten-Tags"
+}

@@ -1,0 +1,12 @@
+export { ReactComponent as arrowRight } from './arrow-right.svg';
+export { ReactComponent as arrival } from './arrival.svg';
+export { ReactComponent as departure } from './departure.svg';
+export { ReactComponent as bed } from './bed.svg';
+export { ReactComponent as info } from './info.svg';
+export { ReactComponent as tagRoom } from './tag.svg';
+export { ReactComponent as creditCard } from './creditCard.svg';
+export { ReactComponent as cancel } from './cancel.svg';
+export { ReactComponent as calendar } from './calendar.svg';
+export { ReactComponent as userGroup } from './userGroup.svg';
+export { ReactComponent as hotel } from './hotel.svg';
+export { ReactComponent as archive } from './archive.svg';

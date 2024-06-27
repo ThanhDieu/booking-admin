@@ -1,0 +1,35 @@
+// tailwindcss modules
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// https://github.com/ant-design/ant-design/issues/13074
+@layer base {
+  svg {
+    display: inline;
+    vertical-align: baseline;
+  }
+}
+
+body {
+  font-family: 'Inter';
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../../src/assets/fonts/Inter-Regular.ttf');
+  font-weight: 'regular';
+}
+
+// antd styling modules - customize variables purposes
+@import '~antd/dist/reset.css';
+
+@import './_variables.less';
+@import './_globals.less';
+@import './_mixins.less';
+@import './components/_all.less';
+
+.ant-timeline-item-head-custom {
+  background: inherit !important;
+}

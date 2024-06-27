@@ -1,0 +1,17 @@
+{
+  "service": "Service",
+  "services": "Services",
+  "service_type": "Service type",
+  "service_types": "Service types",
+  "service_unit": "Service unit",
+  "account_configuration": "Account configuration",
+  "effective_period_from": "Effective period from",
+  "service_tags": "Service tags",
+  "bundle_days": "Offer days",
+  "placeholder_bundle_days": "Pick bundle days",
+  "booking_period": "Booking period",
+  "booking_period_desc": "Set booking periods to define when this rate plan is open for sale. Outside of the defined booking periods, this rate plan will not be visible to bookers.",
+  "booking_channels": "Booking channels",
+  "vat": "VAT",
+  "new_type": "New type"
+}

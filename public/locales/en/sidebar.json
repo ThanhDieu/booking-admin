@@ -1,0 +1,46 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "properties": "Properties",
+    "reservations": "Reservations",
+    "holiday_Package": "Holiday Package",
+    "vouchers": "Vouchers",
+    "tags": "Tags",
+    "activities": "Activities",
+    "landscapes": "Landscapes",
+    "media": "Media",
+    "setting": "Setting",
+    "users": "Users",
+    "build_ibe": "Build IBE",
+    "bundle": "Bundle",
+    "bundles": "Bundles",
+    "overview": "Overview",
+    "templates": "Templates",
+    "tasks": "Tasks",
+    "inventory": "Inventory",
+    "unit-groups": "Unit groups",
+    "units": "Units",
+    "services": "Services",
+    "detail": "Detail",
+    "function": "Function",
+    "newsletter": "Newsletter",
+    "room-category": "Room category",
+    "advertising": "Advertising",
+    "offer": "Offer",
+    "offers": "Offers",
+    "create": "Create",
+    "buid-process": "Buid-Process",
+    "archive": "Archive"
+  },
+  "roles_box": {
+    "manager": "Manager",
+    "properties": "Properties"
+  },
+  "user_box": {
+    "time_mode_browser": "Browser Time",
+    "time_mode_properties": "Property Time",
+    "change_language": "Change language",
+    "logout": "Log out",
+    "logIn": "Log in"
+  }
+}
