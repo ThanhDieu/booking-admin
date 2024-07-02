@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { combineReducers } from '@reduxjs/toolkit';
 import app from './app';
-import orion from './orion';
+import booking from './booking';
 
 interface AsyncReducersProps {
   [key: string]: any;
@@ -9,7 +9,7 @@ interface AsyncReducersProps {
 
 export const rootReducer = {
   app,
-  orion
+  booking
 };
 
 const createReducer = (asyncReducers?: AsyncReducersProps) =>

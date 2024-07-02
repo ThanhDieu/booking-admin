@@ -18,7 +18,7 @@ interface Props {
 const ModalSendMail = ({ modalOpen, handleChangeOpenModal, onSubmit, contentData }: Props) => {
   const { t } = useTranslation(['offer', 'common', 'reservation']);
   const { selected } = useAppSelector((state) => state.app.theme);
-  const { campaignList, campaignLoading } = useAppSelector((state) => state.orion.mailchimp);
+  const { campaignList, campaignLoading } = useAppSelector((state) => state.booking.mailchimp);
   const [form] = Form.useForm();
   const contentWatch = Form.useWatch('content', form);
 

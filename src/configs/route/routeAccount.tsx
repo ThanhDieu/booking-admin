@@ -2,34 +2,34 @@ import { paths } from 'constant';
 import React from 'react';
 import { Navigate, Outlet, RouteObject } from 'react-router-dom';
 import { PrivateRoute } from '.';
-const Home = React.lazy(() => import('pages/@orion/HomePage'));
-const Properties = React.lazy(() => import('pages/@orion/PropertiesPage'));
-const Reservations = React.lazy(() => import('pages/@orion/ReservationsPage'));
-const CreateBooking = React.lazy(() => import('pages/@orion/ReservationsPage/CreateBooking'));
+const Home = React.lazy(() => import('pages/@booking/HomePage'));
+const Properties = React.lazy(() => import('pages/@booking/PropertiesPage'));
+const Reservations = React.lazy(() => import('pages/@booking/ReservationsPage'));
+const CreateBooking = React.lazy(() => import('pages/@booking/ReservationsPage/CreateBooking'));
 
-const Users = React.lazy(() => import('pages/@orion/UsersPage'));
-const Tags = React.lazy(() => import('pages/@orion/TagsPage'));
-const Policies = React.lazy(() => import('pages/@orion/PoliciesPage'));
-const Activities = React.lazy(() => import('pages/@orion/ActivitiesPage'));
-const Landscape = React.lazy(() => import('pages/@orion/LandscapePage'));
+const Users = React.lazy(() => import('pages/@booking/UsersPage'));
+const Tags = React.lazy(() => import('pages/@booking/TagsPage'));
+const Policies = React.lazy(() => import('pages/@booking/PoliciesPage'));
+const Activities = React.lazy(() => import('pages/@booking/ActivitiesPage'));
+const Landscape = React.lazy(() => import('pages/@booking/LandscapePage'));
 const UserDetail = React.lazy(
-  () => import('pages/@orion/UsersPage/sub/UserDetailPage/UserDetailPage')
+  () => import('pages/@booking/UsersPage/sub/UserDetailPage/UserDetailPage')
 );
-const PropertySettingPage = React.lazy(() => import('pages/@orion/@property/PropertySettingPage'));
-const Media = React.lazy(() => import('pages/@orion/@property/MediaPage'));
-const Vouchers = React.lazy(() => import('pages/@orion/VouchersPage'));
-const Bundles = React.lazy(() => import('pages/@orion/@property/BundlesPage'));
-const BuildProcess = React.lazy(() => import('pages/@orion/BuildProcess'));
-const Function = React.lazy(() => import('pages/@orion/Functional'));
-const RoomCategory = React.lazy(() => import('pages/@orion/RoomCategory'));
-const Offer = React.lazy(() => import('pages/@orion/OfferPage'));
-const CreateOffer = React.lazy(() => import('pages/@orion/OfferPage/subs/CreateOffer'));
-const OfferDetail = React.lazy(() => import('pages/@orion/OfferPage/OfferDetailPage'));
+const PropertySettingPage = React.lazy(() => import('pages/@booking/@property/PropertySettingPage'));
+const Media = React.lazy(() => import('pages/@booking/@property/MediaPage'));
+const Vouchers = React.lazy(() => import('pages/@booking/VouchersPage'));
+const Bundles = React.lazy(() => import('pages/@booking/@property/BundlesPage'));
+const BuildProcess = React.lazy(() => import('pages/@booking/BuildProcess'));
+const Function = React.lazy(() => import('pages/@booking/Functional'));
+const RoomCategory = React.lazy(() => import('pages/@booking/RoomCategory'));
+const Offer = React.lazy(() => import('pages/@booking/OfferPage'));
+const CreateOffer = React.lazy(() => import('pages/@booking/OfferPage/subs/CreateOffer'));
+const OfferDetail = React.lazy(() => import('pages/@booking/OfferPage/OfferDetailPage'));
 
 const CreateNewsletter = React.lazy(
-  () => import('pages/@orion/NewsletterPage/subs/CreateNewsletter')
+  () => import('pages/@booking/NewsletterPage/subs/CreateNewsletter')
 );
-const NewsletterPage = React.lazy(() => import('pages/@orion/NewsletterPage'));
+const NewsletterPage = React.lazy(() => import('pages/@booking/NewsletterPage'));
 
 //account admin
 const extendedRoutes: RouteObject[] = [

@@ -5,7 +5,7 @@ import store from 'store';
 import { loadAccessToken, loadRefreshToken, loadViewMode, saveAccessToken } from 'utils/storage';
 
 import errors from 'configs/const/errors';
-import { authSlice } from 'store/orion/Auth';
+import { authSlice } from 'store/booking/Auth';
 import { alert } from 'store/app/alert';
 import { apiRefreshToken } from './Auth';
 import { paths } from 'constant';
@@ -201,7 +201,7 @@ http.interceptors.response.use(
       const { config } = error;
       const originalRequest = config;
 
-      if (response?.data?.code === 401 && store.getState().orion.auth.status === AuthStatus.Auth) {
+      if (response?.data?.code === 401 && store.getState().booking.auth.status === AuthStatus.Auth) {
         if (
           response?.data.errors.length > 0 &&
           (response?.data.errors[0].toLowerCase() === errors.ACTION_ACL ||
@@ -222,7 +222,7 @@ http.interceptors.response.use(
     const { config, response } = error;
     const originalRequest = config;
 
-    if (response?.data?.code === 401 && store.getState().orion.auth.status === AuthStatus.Auth) {
+    if (response?.data?.code === 401 && store.getState().booking.auth.status === AuthStatus.Auth) {
       if (
         response?.data.errors.length > 0 &&
         (response?.data.errors[0].toLowerCase() === errors.ACTION_ACL ||

@@ -7,7 +7,7 @@ interface Props {
 }
 
 const PropertyInfoComponent = ({ propertyId }: Props) => {
-  const { properties } = useAppSelector((state) => state.orion?.property);
+  const { properties } = useAppSelector((state) => state.booking?.property);
   const propertyInfo = properties?.data?.filter((pro) => pro.extId === propertyId);
 
   return (

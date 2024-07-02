@@ -10,8 +10,8 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { PropertyDetailAppType } from 'services/Properties/type';
 import { useAppDispatch, useAppSelector } from 'store';
-import { updateView } from 'store/orion/Auth';
-import { getPropertyDetails, getPropertyList } from 'store/orion/Property';
+import { updateView } from 'store/booking/Auth';
+import { getPropertyDetails, getPropertyList } from 'store/booking/Property';
 import { formatValueOption } from 'utils/format';
 import { loadWhiteList } from 'utils/storage';
 import { displayRole } from 'utils/view';
@@ -26,7 +26,7 @@ const SelectRoleBox: React.FC<Props> = ({ collapsed }) => {
   const navigate = useNavigate();
   const location = useLocation();
   const { currentView, currentViewObj } = useView();
-  const propertiesState = useAppSelector((state) => state.orion?.property);
+  const propertiesState = useAppSelector((state) => state.booking?.property);
   const whiteList = loadWhiteList()
 
   // TODO

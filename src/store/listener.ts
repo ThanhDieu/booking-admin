@@ -1,7 +1,7 @@
 import { createListenerMiddleware, isAnyOf } from '@reduxjs/toolkit';
 import { alert } from './app/alert';
-import { getPropertyList } from './orion/Property';
-import { getBundleTaskList } from './orion/Task';
+import { getPropertyList } from './booking/Property';
+import { getBundleTaskList } from './booking/Task';
 
 const listenerMiddleware = createListenerMiddleware();
 

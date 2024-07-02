@@ -5,12 +5,12 @@ import clsx from 'clsx';
 import { useMemo, useState } from 'react';
 import { MediaStrapiType } from 'services/@strapi/type';
 import { useAppDispatch, useAppSelector } from 'store';
-import { filterTypeMedia, searchMedia } from 'store/orion/Media';
+import { filterTypeMedia, searchMedia } from 'store/booking/Media';
 import { checkDomainUrl, fallbackImageStrapiResolution } from 'utils/media';
 import { addSpaceInString, capitalize } from 'utils/text';
 import { ModalGalleryComponent } from '.';
 import { useTranslation } from 'react-i18next';
-import { ImageType } from 'pages/@orion/@property/MediaPage/index.types';
+import { ImageType } from 'pages/@booking/@property/MediaPage/index.types';
 import { ImageAcceptType } from './modal/ModalGalleryComponent';
 
 interface Props {
@@ -31,7 +31,7 @@ const IndexComponent: React.FC<Props> = ({
   const { t } = useTranslation(['common']);
   const [galleryOpen, setGalleryOpen] = useState(false);
   const dispatch = useAppDispatch();
-  const { dataFiltered } = useAppSelector((state) => state.orion.media);
+  const { dataFiltered } = useAppSelector((state) => state.booking.media);
   const mediaList = useMemo(() => {
     if (mediaWatch && mediaWatch.length) {
       return mediaWatch?.map((media: MediaStrapiType, index: number) => {

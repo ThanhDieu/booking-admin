@@ -5,7 +5,7 @@ import { loadViewMode } from 'utils/storage';
 import { displayRole } from 'utils/view';
 
 const useView = () => {
-  const { view, profile } = useAppSelector((store) => store.orion.auth);
+  const { view, profile } = useAppSelector((store) => store.booking.auth);
 
   const currentView = loadViewMode() || view;
 

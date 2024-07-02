@@ -16,7 +16,7 @@ interface RanderRoleLayout {
 const RanderRoleLayout: RanderRoleLayout = {
   selectViewBox: (collapsed) => {
     const { allowedViewAll } = useView()
-    const { profile } = useAppSelector(store => store.orion.auth)
+    const { profile } = useAppSelector(store => store.booking.auth)
     return allowedViewAll ? (
       <SelectRoleBox collapsed={collapsed} />
     ) : (
@@ -26,7 +26,7 @@ const RanderRoleLayout: RanderRoleLayout = {
     )
   },
   propertyItemForm: (label) => {
-    const { properties } = useAppSelector(store => store.orion.property)
+    const { properties } = useAppSelector(store => store.booking.property)
     const formatProperties = useMemo(() => {
       if (!properties?.data) return [];
       const res: PropertyDetailAppType[] = properties?.data || [];

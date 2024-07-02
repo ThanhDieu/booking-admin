@@ -3,7 +3,7 @@ import { ThemeType } from 'configs/const/general';
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 const config = {
-  prefix: 'ORION',
+  prefix: 'BOOKING',
   accessToken: 'ACCESS_TOKEN',
   accessTokenLog: 'ACCESS_TOKEN_LOG',
   refreshToken: 'REFRESH_TOKEN',

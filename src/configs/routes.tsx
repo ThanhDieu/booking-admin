@@ -20,7 +20,7 @@ const routes: RouteObject[] = [
         renderIfTrue={(state) => {
           const whiteList = loadWhiteList()
 
-          return state?.orion?.auth?.status === AuthStatus.Auth || (whiteList && whiteList?.user?.userId);
+          return state?.booking?.auth?.status === AuthStatus.Auth || (whiteList && whiteList?.user?.userId);
         }}
         fallBackComponent={() => <Navigate to={`/${paths.login}`} />}
       >
@@ -33,7 +33,7 @@ const routes: RouteObject[] = [
       {
         path: '',
         element: (
-          <PrivateRoute renderIfTrue={(state) => state?.orion?.auth?.view === ViewMode.Account}>
+          <PrivateRoute renderIfTrue={(state) => state?.booking?.auth?.view === ViewMode.Account}>
             <Outlet />
           </PrivateRoute>
         ),
@@ -42,7 +42,7 @@ const routes: RouteObject[] = [
       {
         path: '',
         element: (
-          <PrivateRoute renderIfTrue={(state) => state?.orion?.auth?.view !== ViewMode.Account && !state?.orion?.property?.detail?.disabled}>
+          <PrivateRoute renderIfTrue={(state) => state?.booking?.auth?.view !== ViewMode.Account && !state?.booking?.property?.detail?.disabled}>
             <Outlet />
           </PrivateRoute>
         ),
@@ -60,7 +60,7 @@ const routes: RouteObject[] = [
     errorElement: <ServerErrorPage />,
     element: (
       <PrivateRoute
-        renderIfTrue={(state) => state?.orion?.auth?.status === AuthStatus.Unauth}
+        renderIfTrue={(state) => state?.booking?.auth?.status === AuthStatus.Unauth}
         fallBackComponent={() => <Navigate to={`/${paths.home}`} />}
       >
         <Login />

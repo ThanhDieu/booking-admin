@@ -13,7 +13,7 @@ export interface ProfilePageProps {
 
 const Page: React.FC<ProfilePageProps> = (props) => {
   useHelmet({
-    title: 'Orion - Profile'
+    title: 'Booking - Profile'
   });
   const navigate = useNavigate();
   const location = useLocation();

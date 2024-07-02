@@ -34,7 +34,7 @@ const PrivateRoute: React.FC<PrivateRouteProps> = (props) => {
   const store = useAppSelector((store) => store);
   const location = useLocation();
   const { currentViewObj } = useView();
-  const { detail } = useAppSelector((store) => store?.orion?.property);
+  const { detail } = useAppSelector((store) => store?.booking?.property);
 
   if ((renderIfTrue && renderIfTrue(store, location, currentViewObj?.code)) || !renderIfTrue) {
     return children;

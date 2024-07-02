@@ -5,48 +5,48 @@ import { Navigate, Outlet, RouteObject } from 'react-router-dom';
 import { PrivateRoute } from '.';
 import { RoleMode } from 'configs/const/auth';
 
-const Home = React.lazy(() => import('pages/@orion/HomePage'));
-const Reservations = React.lazy(() => import('pages/@orion/ReservationsPage'));
+const Home = React.lazy(() => import('pages/@booking/HomePage'));
+const Reservations = React.lazy(() => import('pages/@booking/ReservationsPage'));
 const ReservationDetail = React.lazy(
-  () => import('pages/@orion/ReservationsPage/ReservationDetailPage')
+  () => import('pages/@booking/ReservationsPage/ReservationDetailPage')
 );
-const CreateBooking = React.lazy(() => import('pages/@orion/ReservationsPage/CreateBooking'));
+const CreateBooking = React.lazy(() => import('pages/@booking/ReservationsPage/CreateBooking'));
 
-const Bundles = React.lazy(() => import('pages/@orion/@property/BundlesPage'));
+const Bundles = React.lazy(() => import('pages/@booking/@property/BundlesPage'));
 const BundleDetail = React.lazy(
-  () => import('pages/@orion/@property/BundlesPage/sub/BundleDetailPage/BundleDetailPage')
+  () => import('pages/@booking/@property/BundlesPage/sub/BundleDetailPage/BundleDetailPage')
 );
-const ServiceList = React.lazy(() => import('pages/@orion/ServiceListPage'));
+const ServiceList = React.lazy(() => import('pages/@booking/ServiceListPage'));
 const ServiceListDetail = React.lazy(
-  () => import('pages/@orion/ServiceListPage/sub/ServiceListDetailPage')
+  () => import('pages/@booking/ServiceListPage/sub/ServiceListDetailPage')
 );
-const BookingDetail = React.lazy(() => import('pages/@orion/@property/BookingDetailPage'));
+const BookingDetail = React.lazy(() => import('pages/@booking/@property/BookingDetailPage'));
 
-const Tags = React.lazy(() => import('pages/@orion/TagsPage'));
-const Policies = React.lazy(() => import('pages/@orion/PoliciesPage'));
+const Tags = React.lazy(() => import('pages/@booking/TagsPage'));
+const Policies = React.lazy(() => import('pages/@booking/PoliciesPage'));
 const PolicyDetail = React.lazy(
-  () => import('pages/@orion/PoliciesPage/sub/PolicyDetailPage/PolicyDetailPage')
+  () => import('pages/@booking/PoliciesPage/sub/PolicyDetailPage/PolicyDetailPage')
 );
-const Users = React.lazy(() => import('pages/@orion/UsersPage'));
+const Users = React.lazy(() => import('pages/@booking/UsersPage'));
 const UserDetail = React.lazy(
-  () => import('pages/@orion/UsersPage/sub/UserDetailPage/UserDetailPage')
+  () => import('pages/@booking/UsersPage/sub/UserDetailPage/UserDetailPage')
 );
-const Tasks = React.lazy(() => import('pages/@orion/@property/TasksPage'));
-const PropertySettingPage = React.lazy(() => import('pages/@orion/@property/PropertySettingPage'));
-const RatePlans = React.lazy(() => import('pages/@orion/@property/RatePlansPage'));
+const Tasks = React.lazy(() => import('pages/@booking/@property/TasksPage'));
+const PropertySettingPage = React.lazy(() => import('pages/@booking/@property/PropertySettingPage'));
+const RatePlans = React.lazy(() => import('pages/@booking/@property/RatePlansPage'));
 const RatePlanCreate = React.lazy(
-  () => import('pages/@orion/@property/RatePlansPage/RatePlanCreate')
+  () => import('pages/@booking/@property/RatePlansPage/RatePlanCreate')
 );
-const Availability = React.lazy(() => import('pages/@orion/@property/AvailabilityPage'));
+const Availability = React.lazy(() => import('pages/@booking/@property/AvailabilityPage'));
 
-const Units = React.lazy(() => import('pages/@orion/@property/UnitsPage'));
+const Units = React.lazy(() => import('pages/@booking/@property/UnitsPage'));
 const UnitDetail = React.lazy(
-  () => import('pages/@orion/@property/UnitsPage/sub/UnitDetailPage/UnitDetailPage')
+  () => import('pages/@booking/@property/UnitsPage/sub/UnitDetailPage/UnitDetailPage')
 );
-const UnitGroups = React.lazy(() => import('pages/@orion/@property/UnitGroupsPage'));
+const UnitGroups = React.lazy(() => import('pages/@booking/@property/UnitGroupsPage'));
 const UnitGroupsDetail = React.lazy(
   () =>
-    import('pages/@orion/@property/UnitGroupsPage/sub/UnitGroupsDetailPage/UnitGroupsDetailPage')
+    import('pages/@booking/@property/UnitGroupsPage/sub/UnitGroupsDetailPage/UnitGroupsDetailPage')
 );
 
 const bundleChildrens: RouteObject[] = [];
@@ -575,7 +575,7 @@ const extendedPropertyRoutes: RouteObject[] = [
         element: (
           <PrivateRoute
             renderIfTrue={(state) =>
-              !!state?.orion?.auth?.profile?.roles?.some(
+              !!state?.booking?.auth?.profile?.roles?.some(
                 (role) =>
                   role?.extendedData?.priority === RoleMode.SuperAdmin ||
                   role?.extendedData?.priority === RoleMode.HotelDirector

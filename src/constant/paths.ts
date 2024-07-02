@@ -79,5 +79,5 @@ export default {
   h5dz2i81gu1m5: 'h5dz2i81gu1m5'
 };
 
-export const IBE_BOOKING_LINK_OFFER = 'https://ibe.orionhms.com/booking/offer';
-export const IBE_BOOKING_LINK_NEWSLETTER = 'https://ibe.orionhms.com/booking/bundle';
+export const IBE_BOOKING_LINK_OFFER = 'https://ibe.bookinghms.com/booking/offer';
+export const IBE_BOOKING_LINK_NEWSLETTER = 'https://ibe.bookinghms.com/booking/bundle';

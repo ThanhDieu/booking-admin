@@ -1,5 +1,5 @@
 import { BaseDataAppType, GuestInfo, PaymentAccountType, TimeSliceBookingType } from '@types';
-import { ServiceSelectedType } from 'pages/@orion/ReservationsPage/partials/booking/FormCreateBooking';
+import { ServiceSelectedType } from 'pages/@booking/ReservationsPage/partials/booking/FormCreateBooking';
 import { ReservationDetailAppType, ReservationDetailType } from 'services/Reservation/type';
 
 // booking

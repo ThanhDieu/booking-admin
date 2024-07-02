@@ -16,12 +16,12 @@ import {
 import clsx from 'clsx';
 import { filterTypeOptions } from 'configs/const/select';
 import { useDidMount } from 'hooks';
-import { ImageType } from 'pages/@orion/@property/MediaPage/index.types';
+import { ImageType } from 'pages/@booking/@property/MediaPage/index.types';
 import { useEffect, useMemo, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { MediaStrapiType } from 'services/@strapi/type';
 import { useAppDispatch } from 'store';
-import { resetFilterState } from 'store/orion/Media';
+import { resetFilterState } from 'store/booking/Media';
 import { checkDomainUrl, fallbackImageError, fallbackImageStrapiResolution } from 'utils/media';
 import SearchComponent from '../SearchComponent';
 import { useTranslation } from 'react-i18next';

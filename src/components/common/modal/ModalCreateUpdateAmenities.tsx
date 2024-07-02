@@ -7,7 +7,7 @@ import { FuncType, GeneralName, tagType } from 'configs/const/general';
 import { colors } from 'constant';
 import { useLocaleSegmentOption } from 'hooks';
 import useView from 'hooks/useView';
-import { ImageType } from 'pages/@orion/@property/MediaPage/index.types';
+import { ImageType } from 'pages/@booking/@property/MediaPage/index.types';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AttributeDetailAppType } from 'services/Attributes/type';
@@ -47,10 +47,10 @@ const ModalCreateUpdateAmenities = ({
 }: ModalProp) => {
   const [form] = useForm();
   const mediaWatch = useWatch('media', form);
-  const { data: mediaData } = useAppSelector((state) => state.orion.media);
+  const { data: mediaData } = useAppSelector((state) => state.booking.media);
   const { currentView, currentViewObj } = useView();
   const { colorPrimary } = useAppSelector((state) => state.app.theme);
-  const { languages: languageSetting } = useAppSelector((state) => state.orion.languageSetting);
+  const { languages: languageSetting } = useAppSelector((state) => state.booking.languageSetting);
   const { mandatoryLocaleList } = useLocaleSegmentOption();
 
   const [colorTag, setcolorTag] = useState<string>(

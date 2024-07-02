@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
 import { loginService } from 'services/Auth';
 import { LoginPayload } from 'services/Auth/types';
 import { useAppDispatch } from 'store';
-import { initialUserSessionAction } from 'store/orion/Auth';
+import { initialUserSessionAction } from 'store/booking/Auth';
 import { saveAccessToken, saveRefreshToken } from 'utils/storage';
 import { capitalize } from 'utils/text';
 import { validateMessages } from 'utils/validationForm';

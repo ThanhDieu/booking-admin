@@ -13,7 +13,7 @@ export interface SettingPageProps {
 
 const Page: React.FC<SettingPageProps> = (props) => {
   useHelmet({
-    title: 'Orion - Setting'
+    title: 'Booking - Setting'
   });
   const navigate = useNavigate();
   const location = useLocation();

@@ -41,8 +41,8 @@ function generatePage(pageName) {
 
 function generateSlice(modelName) {
   const baseTemplateSrc = 'templates/slice';
-  const targetModelDest = `src/store/orion/${modelName}`;
-  const rootSliceDest = `src/store/orion/index.ts`;
+  const targetModelDest = `src/store/booking/${modelName}`;
+  const rootSliceDest = `src/store/booking/index.ts`;
   fs.cpSync(baseTemplateSrc, targetModelDest, { overwrite: true, recursive: true });
 
   const thunkContent = fs.readFileSync(`${targetModelDest}/thunks.ts`, 'utf8');

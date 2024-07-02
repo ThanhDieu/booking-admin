@@ -5,7 +5,7 @@ import { useAppSelector } from 'store';
 
 const TranslationForm = () => {
   const { t } = useTranslation(['common']);
-  const { languages } = useAppSelector((state) => state.orion.languageSetting);
+  const { languages } = useAppSelector((state) => state.booking.languageSetting);
 
   return (
     <div className="flex items-center gap-4 overflow-x-scroll py-4 mb-6">

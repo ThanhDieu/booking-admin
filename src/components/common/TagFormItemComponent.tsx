@@ -8,7 +8,7 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { TagDetailAppType } from 'services/Tags/type';
 import { useAppDispatch, useAppSelector } from 'store';
-import { getTagList } from 'store/orion/Tag';
+import { getTagList } from 'store/booking/Tag';
 import { removeDuplicateObjects } from 'utils/array';
 import { formatSelectOption, revertValueOption } from 'utils/format';
 import { queryCase } from 'utils/queryParams';
@@ -39,7 +39,7 @@ const TagFormItemComponent: React.FC<Props> = ({
   const tagValues: any[] = useWatch(item.name, form);
   const [perPage, setPerPage] = useState(10);
 
-  const { data: tagList } = useAppSelector((state) => state?.orion?.tag);
+  const { data: tagList } = useAppSelector((state) => state?.booking?.tag);
 
   const handleLoadMore = () => {
     setPerPage(perPage + 10);

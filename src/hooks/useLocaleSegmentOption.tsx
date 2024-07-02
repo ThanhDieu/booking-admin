@@ -3,13 +3,13 @@ import { languages } from 'constant';
 import { useAppSelector } from 'store';
 
 const useLocaleSegmentOption = () => {
-  const { languages: languagesSetting } = useAppSelector((state) => state.orion.languageSetting);
+  const { languages: languagesSetting } = useAppSelector((state) => state.booking.languageSetting);
 
   const segmentOptions = languagesSetting
     ? languagesSetting.map((locale) => ({
-        label: (languages as any)[locale.code],
-        value: locale.code
-      }))
+      label: (languages as any)[locale.code],
+      value: locale.code
+    }))
     : [];
   const mandatoryLocaleList = languagesSetting
     ?.filter((lang) => lang.mandatory)

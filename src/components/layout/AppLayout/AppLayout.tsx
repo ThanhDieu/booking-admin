@@ -17,11 +17,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { MediaStrapiType } from 'services/@strapi/type';
 import { useAppDispatch, useAppSelector } from 'store';
 import { selectTheme } from 'store/app/theme';
-import { updateView } from 'store/orion/Auth';
-import { getCampaignListThunk } from 'store/orion/Mailchimp';
-import { getMediaDataAction } from 'store/orion/Media';
-import { getPropertyDetails } from 'store/orion/Property';
-import { getAllSettingLanguage } from 'store/orion/SettingLanguage';
+import { updateView } from 'store/booking/Auth';
+import { getCampaignListThunk } from 'store/booking/Mailchimp';
+import { getMediaDataAction } from 'store/booking/Media';
+import { getPropertyDetails } from 'store/booking/Property';
+import { getAllSettingLanguage } from 'store/booking/SettingLanguage';
 import { fallbackImageStrapiResolution } from 'utils/media';
 import { saveThemeToStorage } from 'utils/storage';
 import RanderRoleLayout from '../RoleLayout';
@@ -40,8 +40,8 @@ const XLayout: React.FC<AppLayoutProps> = (props) => {
   const { currentView, currentViewObj, allowedViewAll, allowedApprove } = useView();
 
   const { selected } = useAppSelector((state) => state.app.theme);
-  const { profile } = useAppSelector((state) => state.orion.auth);
-  const mediaData: MediaStrapiType[] = useAppSelector((state) => state.orion.media.data);
+  const { profile } = useAppSelector((state) => state.booking.auth);
+  const mediaData: MediaStrapiType[] = useAppSelector((state) => state.booking.media.data);
 
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [collapsed, setCollapsed] = useState<boolean>(false);
@@ -80,11 +80,10 @@ const XLayout: React.FC<AppLayoutProps> = (props) => {
       ?.slice(0, 24)
       .map((item) =>
         item?.url
-          ? `${
-              item?.formats && Object.keys(item?.formats).length
-                ? fallbackImageStrapiResolution(item.formats) || []
-                : item.url
-            }`
+          ? `${item?.formats && Object.keys(item?.formats).length
+            ? fallbackImageStrapiResolution(item.formats) || []
+            : item.url
+          }`
           : '/no-image.png'
       ),
     import.meta.env.REACT_APP_BASE_URL_STRAPI

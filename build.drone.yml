@@ -1,7 +1,7 @@
 #------------------------------------------------Pipeline------------------------------------------------
 kind: pipeline
 type: docker
-name: Orion.Admin
+name: Booking.Admin
 
 clone:
   disable: true
@@ -10,13 +10,13 @@ steps:
   - name: Clone
     image: alpine/git
     commands:
-    - git -c http.sslVerify=false clone -b $DRONE_COMMIT_BRANCH https://$${creds}@git.dision.office/Orion/orion.admin.git
+    - git -c http.sslVerify=false clone -b $DRONE_COMMIT_BRANCH https://$${creds}@git.dision.office/Booking/booking.admin.git
       
   - name: Prebuild & Build Prod
     image: node:18-alpine
     commands:
-    - yarn --cwd orion.admin install
-    - yarn --cwd orion.admin build
+    - yarn --cwd booking.admin install
+    - yarn --cwd booking.admin build
     when:
       branch:
       - prod
@@ -24,8 +24,8 @@ steps:
   - name: Prebuild & Build Staging
     image: node:18-alpine
     commands:
-    - yarn --cwd orion.admin install
-    - yarn --cwd orion.admin build:stage
+    - yarn --cwd booking.admin install
+    - yarn --cwd booking.admin build:stage
     when:
       branch:
       - staging
@@ -34,13 +34,13 @@ steps:
     image: appleboy/drone-scp
     settings:
       host:
-        from_secret: orion-host-2
+        from_secret: booking-host-2
       username:
-        from_secret: orion-host-2-user
+        from_secret: booking-host-2-user
       password:
-        from_secret: orion-host-2-password
+        from_secret: booking-host-2-password
       target: /tmp/admin/
-      source: /drone/src/orion.admin/build
+      source: /drone/src/booking.admin/build
       strip_components: 3
     when:
       branch:
@@ -50,11 +50,11 @@ steps:
     image: appleboy/drone-ssh
     settings:
       host:
-        from_secret: orion-host-2
+        from_secret: booking-host-2
       username:
-        from_secret: orion-host-2-user
+        from_secret: booking-host-2-user
       password:
-        from_secret: orion-host-2-password
+        from_secret: booking-host-2-password
       script:
         - /tmp/admin.sync
     when:
@@ -70,8 +70,8 @@ steps:
         from_secret: netcup-host-user
       key:
         from_secret: netcup-key
-      source: /drone/src/orion.admin/build
-      target: /data/shared/orion/frontend/admin/
+      source: /drone/src/booking.admin/build
+      target: /data/shared/booking/frontend/admin/
       recursive: true
     when:
         branch:
@@ -106,4 +106,4 @@ steps:
         from_secret: ntfy_password
 
 depends_on:
-  - Orion.Admin
+  - Booking.Admin
